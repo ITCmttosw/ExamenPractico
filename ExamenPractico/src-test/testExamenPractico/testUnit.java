@@ -26,5 +26,18 @@ public class testUnit {
 		post.endSale();
 		Assert.assertTrue(post.getSale().total() == 5000);
 	}
+	
+
+	
+	@Test
+	public void testFeria() {
+		post.EnterItem(1, 5);
+		post.EnterItem(2, 5);
+		post.EnterItem(3, 5);
+		post.EnterItem(4, 5);
+		post.endSale();
+		post.makePayment(12000);
+		Assert.assertTrue(post.getSale().getBalance() == 7000);
+	}
 
 }
