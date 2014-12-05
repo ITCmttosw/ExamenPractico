@@ -27,13 +27,18 @@ public class Sale {
 
 	public float total()
 	{
-		float total = 0;
 		Enumeration	e = lineItems.elements();
 
+		return sumAllElements(e);
+	}
+
+	//ref-1 se suman todos precios las lineas de venta
+	private float sumAllElements(Enumeration e) {
+		float total = 0;
 		while( e.hasMoreElements() )
-			{
+		{
 			total += ( (SaleLineItem) e.nextElement() ).subtotal();
-			}
+		}
 		return total;
 	}
 

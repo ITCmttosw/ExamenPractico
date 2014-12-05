@@ -37,10 +37,10 @@ public class POST {
 		return ( sale == null ) || ( sale.isComplete() );
 	}
 
-        public float getTotal()
-        {
-          return sale.total();
-        }
+    public float getTotal()
+    {
+      return sale.total();
+    }
 
 	public Sale getSale()
 	{
