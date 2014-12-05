@@ -6,11 +6,11 @@ public class ProductSpecification {
 	private String description = "";
 
 	public ProductSpecification( int upc, float price, String description )
-		{
+	{
 		this.upc         = upc;
 		this.price       = price;
 		this.description = description;
-		}
+	}
 
 	public int getUPC() { return upc;	}
 	public float getPrice() { return price; }
