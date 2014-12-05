@@ -3,10 +3,16 @@ package domain;
 import java.util.*;
 
 public class Sale {
-	private Vector lineItems = new Vector();
-	private Date date = new Date();
-	private boolean isComplete = false;
+	private Vector lineItems;
+	private Date date;
+	private boolean isComplete;
 	private Payment payment;
+	
+	public Sale () {
+		lineItems = new Vector();
+		date = new Date();
+		isComplete = false;
+	}
 
 	public float getBalance()
 	{

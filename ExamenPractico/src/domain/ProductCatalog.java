@@ -3,9 +3,10 @@ package domain;
 import java.util.*;
 
 public class ProductCatalog {
-  private Hashtable productSpecifications = new Hashtable();
+  private Hashtable productSpecifications;
 
   public ProductCatalog() {
+	  productSpecifications = new Hashtable();
 	  generateSpecifications();
   }
 
